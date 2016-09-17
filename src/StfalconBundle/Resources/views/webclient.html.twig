@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Webclient</title>
+    <style>
+        html,body{    font-family: verdana;}
+        .fblock{
+            float:left;
+            padding:10px;
+            margin:5px;
+            border: 1px solid #CCC;
+            background-color:#DADADA;
+        }
+        .msg {
+            padding: 10px;
+            margin: 10px;
+            background-color: #ffebeb;
+            border: 1px solid #F00;
+            border-radius: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="msg"><pre>{{ debug|raw }}</pre></div>
+<div class="fblock">
+<h3>UPLOAD</h3>
+<form target="_self" action="/upload" method="post" enctype="multipart/form-data">
+    Image: <input type="file" name="image"><br>
+    Tags (через запятую): <input type="text" name="tags" value="tag1,tag2"><br>
+    Title <input type="text" name="title" value="mysupertitle"><br>
+    Description:<br>
+    <textarea name="description">desc</textarea><br>
+    <input type="submit" value="Отправить">
+</form>
+</div>
+
+
+
+<script src="/stfalcon/jquery.min.js"></script>
+<script src="/stfalcon/main.js"></script>
+</body>
+</html>

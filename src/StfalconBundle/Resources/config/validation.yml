@@ -1,0 +1,4 @@
+StfalconBundle\Entity\Image:
+    properties:
+        name:
+            - NotBlank: ~

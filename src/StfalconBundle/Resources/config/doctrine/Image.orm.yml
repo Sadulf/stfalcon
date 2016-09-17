@@ -9,13 +9,12 @@ StfalconBundle\Entity\Image:
             generator:
                 strategy: AUTO
     fields:
-        title:
+        name:
             type: string
             length: 255
-        name:
+        title:
             type: string
             length: 255
         description:
             type: text
-            nullable: true
     lifecycleCallbacks: {  }
