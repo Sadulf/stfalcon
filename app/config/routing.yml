@@ -1,3 +1,7 @@
+webclient:
+    path:      /
+    defaults:  { _controller: StfalconBundle:Webclient:index }
+
 upload:
     path:      /upload
     defaults:  { _controller: StfalconBundle:Restapi:upload }
