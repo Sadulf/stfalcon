@@ -1,10 +1,10 @@
 <?php
 
-namespace AppBundle\Tests\Controller;
+namespace StfalconBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class DefaultControllerTest extends WebTestCase
+class RestapiControllerTest extends WebTestCase
 {
     public function testIndex()
     {

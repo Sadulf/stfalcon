@@ -1,3 +1,20 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+upload:
+    path:      /upload
+    defaults:  { _controller: StfalconBundle:Restapi:upload }
+delete:
+    path:      /delete/{id}
+    defaults:  { _controller: StfalconBundle:Restapi:delete }
+
+addtags:
+    path:      /addtags/{id}
+    defaults:  { _controller: StfalconBundle:Restapi:addtags }
+deltags:
+    path:      /deltags/{id}
+    defaults:  { _controller: StfalconBundle:Restapi:deltags }
+
+list:
+    path:      /list/{page}
+    defaults:  { _controller: StfalconBundle:Restapi:list, page: 0 }
+search:
+    path:      /search/{term}
+    defaults:  { _controller: StfalconBundle:Restapi:search }
