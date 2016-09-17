@@ -1,0 +1,19 @@
+StfalconBundle\Entity\ImageTag:
+    type: entity
+    table: null
+    repositoryClass: StfalconBundle\Repository\ImageTagRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        imageId:
+            type: integer
+            column: image_id
+        tagId:
+            type: integer
+            column: tag_id
+
+    lifecycleCallbacks: {  }

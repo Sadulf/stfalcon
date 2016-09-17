@@ -1,0 +1,21 @@
+StfalconBundle\Entity\Image:
+    type: entity
+    table: null
+    repositoryClass: StfalconBundle\Repository\ImageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        description:
+            type: text
+            nullable: true
+    lifecycleCallbacks: {  }

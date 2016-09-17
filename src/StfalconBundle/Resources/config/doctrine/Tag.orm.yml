@@ -1,0 +1,16 @@
+StfalconBundle\Entity\Tag:
+    type: entity
+    table: null
+    repositoryClass: StfalconBundle\Repository\TagRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tag:
+            type: string
+            length: '64'
+            unique: true
+    lifecycleCallbacks: {  }
